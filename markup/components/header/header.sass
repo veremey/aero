@@ -1,0 +1,232 @@
+
+.header
+	background-color: #f3f3f3
+	border-bottom: 1px solid #f3f3f3
+	+r(1050)
+		display: none
+	&__wraper
+		display: flex
+		align-items: center
+		justify-content: space-between
+		flex-grow: 1
+		+r(1000)
+			flex-direction: column-reverse
+			justify-content: center
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			height: 100vh
+			background-color: rgba(0, 0, 0, .9)
+			z-index: 100
+	.layout
+		position: relative
+		display: flex
+		align-items: center
+		width: 100%
+	.search
+		display: flex
+		+r(1140)
+			width: 67%
+		+r(1000)
+			margin-top: 30px
+		+r(800)
+			display: block
+			height: auto
+			background-color: $n
+			border: none
+		+r(450)
+			width: 94%
+	.fieldset_search
+		flex-grow: 1
+	.fieldset
+		+r(800)
+			width: 100%
+			height: 74px
+			border: none
+			background-color: #fff
+			margin-bottom: 4px
+	.custom-select
+		+r(800)
+			width: 100%
+			background-color: #fff
+	.select-selected
+		+r(800)
+			border: none
+	.btn__search
+		+r(800)
+			width: 100%
+
+.logo
+	position: relative
+	display: flex
+	align-items: center
+	width: 195px
+	padding: 15px 80px 15px 0
+	color: #000
+	+tr(.4s)
+	&:hover
+		opacity: .9
+	&__wrap
+		position: relative
+	img
+		position: relative
+		display: inline-block
+		vertical-align: top
+		margin-right: 10px
+	strong
+		display: block
+		text-transform: uppercase
+		font-size: 23px
+		+ob
+	b
+		display: block
+		font-size: 13px
+		text-transform: uppercase
+		+osb
+
+.user
+	display: flex
+	align-items: center
+	justify-content: space-between
+	&__login
+		display: inline-block
+		vertical-align: top
+		padding: 13px 26px
+		font-size: 18px
+		color: #090a0b
+		+r(1000)
+			color: #fff
+		&:hover
+			color: #1182bf
+	&__join
+		display: inline-block
+		vertical-align: top
+		padding: 13px 26px
+		font-size: 18px
+		color: #1182bf
+		border: 2px solid #1182bf
+		text-transform: uppercase
+		+osb
+		position: relative
+		transform: perspective(1px) translateZ(0)
+		box-shadow: 0 0 1px rgba(0, 0, 0, 0)
+		position: relative
+		transition: color 0.3s ease-out, background-color 0.3s ease-out
+		&:hover
+			color: #fff
+			background-color: #1182bf
+			&:before
+				transform: scaleY(1)
+				box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.5)
+				opacity: 1
+		&:before
+			content: ""
+			position: absolute
+			z-index: -1
+			top: 0px
+			bottom: 0px
+			left: 0px
+			right: 0px
+			background: #1182bf
+			transform: scaleY(0)
+			transform-origin: 50%
+			opacity: 0
+			transition: transform 0.3s ease-out, box-shadow 0.3s ease-out, opacity 0.3s ease-out
+			transition: transform 0.3s ease-out, box-shadow 0.3s ease-out, opacity 0.3s ease-out, -webkit-transform 0.3s ease-out, -webkit-box-shadow 0.3s ease-out
+	&__pic
+		position: relative
+		display: inline-block
+		vertical-align: top
+		height: 50px
+		width: 50px
+		border-radius: 100%
+		overflow: hidden
+		margin-left: 20px
+		+tr(.4s)
+		&:hover
+			opacity: .8
+	&__download
+		+tr(.4s)
+		&:hover
+			opacity: .8
+	&__img
+		+vcenter
+
+.trigger
+	position: absolute
+	top: 15px
+	right: 20px
+	width: 44px
+	height: 44px
+	background-color: #000
+	display: none
+	cursor: pointer
+	+r(1000)
+		display: inline-block
+		vertical-align: top
+	+r(450)
+		height: 40px
+	&:hover
+		.trigger__item
+			&::before
+				bottom: 13px
+			&::after
+				top: 8px
+	&.is-active
+		z-index: 110
+		.trigger__item
+			display: block
+			width: 36px
+			height: 5px
+			position: relative
+			top: 0px
+			background-color: #fff
+			transition: all 0.3s ease-out
+			transform: rotate(225deg)
+			&::before
+				bottom: 0
+			&::after
+				transform: rotate(90deg)
+				top: -5px
+			&::before
+				bottom: 0
+			&::after
+				top: -5px
+		& + .header__wrap
+			position: fixed
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			width: 100%
+			background-color: #000
+	&__item
+		display: block
+		width: 36px
+		height: 5px
+		position: absolute
+		top: 20px
+		left: 4px
+		background-color: #fff
+		transition: all 0.3s ease-out
+		+r(450)
+			top: 18px
+		&::after
+			position: relative
+			display: block
+			content: ' '
+			top: 5px
+			width: 36px
+			height: 5px
+			background-color: #fff
+			transition: all 0.3s ease-out
+		&::before
+			position: relative
+			display: block
+			content: ' '
+			bottom: 10px
+			width: 36px
+			height: 5px
+			background-color: #fff
+			transition: all 0.3s ease-out

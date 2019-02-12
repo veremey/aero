@@ -1,0 +1,1 @@
+In this case HTML5 only. No JS.   🦴

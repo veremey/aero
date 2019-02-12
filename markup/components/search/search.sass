@@ -1,0 +1,144 @@
+
+.search
+	display: inline-block
+	width: 597px
+	height: 73px
+	font-size: 0
+	border-left: 1px solid #dedede
+	background-color: #fff
+	text-align: left
+	+r(800)
+		width: 94%
+		display: block
+		height: auto
+		margin: 0 auto
+		background-color: $n
+		border: none
+	+r(450)
+		width: 94%
+
+
+.fieldset
+	display: inline-block
+	vertical-align: top
+	border: none
+	height: 100%
+	padding: 24px
+	margin: 0
+	+r(650)
+		width: 100%
+		height: 74px
+		border: none
+		background-color: #fff
+		margin-bottom: 4px
+	&_search
+		flex-grow: 1
+		width: 274px
+		border: none
+		font-size: 18px
+		color: #5b5b5b
+		+or
+		+r(650)
+			width: 100%
+		input
+			border: none
+			width: 100%
+			line-height: .9
+	&_category
+		width: 162px
+		font-size: 14px
+		text-transform: uppercase
+		color: #111
+		+r(650)
+			width: 100%
+	&_btn
+		width: 74px
+		padding: 0
+		+r(650)
+			width: 100%
+
+.btn__search
+	position: relative
+	display: inline-block
+	height: 74px
+	width: 74px
+	background-color: #1081bf
+	transform: perspective(1px) translateZ(0)
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0)
+	position: relative
+	transition-property: color
+	transition-duration: 0.3s
+	+r(650)
+		width: 100%
+	&:before
+		content: ""
+		position: absolute
+		z-index: -1
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		background: #000
+		transform: scaleY(0)
+		transform-origin: 50% 0
+		transition-property: transform
+		transition-duration: 0.3s
+		transition-timing-function: ease-out
+	&:hover
+		&:before
+			transform: scaleY(1)
+
+.icon-search
+	+vcenter
+	display: inline-block
+	width: 37px
+	height: 37px
+	background: url('../img/content/lupa.png') center center no-repeat
+
+.custom-select
+	position: relative
+	width: 200px
+	+r(650)
+		width: 100%
+		background-color: #fff
+	select
+		display: none
+
+.select-selected
+	border-left: 1px solid #b4b4b4
+	+r(650)
+		border: none
+	&:after
+		position: absolute
+		content: ""
+		top: 14px
+		right: 10px
+		display: inline-block
+		vertical-align: top
+		width: 13px
+		height: 7px
+		background: url('../img/content/icon-down.png') center center no-repeat
+	&.select-arrow-active:after
+		+scale(-1)
+		top: 12px
+
+.select-items div,
+.select-selected
+	color: #111
+	padding: 8px 16px
+	cursor: pointer
+
+.select-items
+	position: absolute
+	top: 100%
+	left: 0
+	right: 0
+	z-index: 99
+	background-color: #fff
+	border-left: 1px solid #b4b4b4
+	box-shadow: 0 0 2px rgba(180, 180, 180, .8)
+.select-hide
+	display: none
+.select-items div:hover,
+.same-as-selected
+	background-color: #0f81be

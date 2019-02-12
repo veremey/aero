@@ -1,0 +1,62 @@
+<!doctype html>
+<html class="no-js" lang="en-US">
+
+<head>
+	{{> head/head head.defaults}}
+</head>
+
+<body class="page">
+	%=symbols=%
+
+	<div class="page__wrapper">
+
+		{{> header/header}}
+		<div class="startscreen">
+			<div class="layout">
+				<h1 class="title__main" role="heading" aria-level="1">best aero curses</h1>
+				<div class="startscreen__text">
+					<p class="desc__r">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
+				</div>
+				{{> search/search}}
+				<a href="#" class="startscreen__download"><i class="icon-download"></i></a>
+			</div>
+		</div>
+		{{> popular/popular popular.pop}}
+
+		{{> prefooter/prefooter}}
+		{{> footer/footer}}
+
+		<div class="ppp">
+			<div class="ppp__bg"></div>
+			<div class="ppp__body" id="addVideo">
+				<div class="ppp__header">
+					<a href="/" class="logo">
+						<img src="static/img/content/logo-big.png" alt="aero trainig logo">
+						<span class="logo__wrap">
+							<strong>aero</strong>
+							<b>training</b>
+						</span>
+					</a>
+					<h3 class="ppp__name">Add Videos</h3>
+				</div>
+				<div class="videoadd">
+					<div class="videoadd__content">
+						<div class="videoadd__item videoadd__item_open">
+							<i class="icon-open"></i>
+							<p class="videoadd__name">Open</p>
+						</div>
+						<div class="videoadd__item videoadd__item_brag">
+							<i class="icon-drag"></i>
+							<p class="videoadd__name">Drag and Drop</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="static/js/separate-js/select.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!doctype html>
+<html class="no-js" lang="en-US">
+
+<head>
+	{{> head/head head.defaults}}
+</head>
+
+<body class="page">
+	%=symbols=%
+
+	<div class="page__wrapper">
+
+		{{> header-user/header-user}}
+
+		<div class="study">
+			<div class="layout">
+				{{> aside/aside}}
+				<div class="study__video">
+					<iframe width="1175" height="661" src="https://www.youtube.com/embed/v8ny7Ul3A24" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+
+		{{> popular/popular popular.more}}
+		{{> footer/footer}}
+	</div>
+
+	<script src="static/js/separate-js/select.js"></script>
+
+</body>
+
+</html>

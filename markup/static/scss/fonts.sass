@@ -1,0 +1,161 @@
+
+
+=b
+	font-family: antquab
+
+=ol
+	font-family: 'Open Sans', sans-serif
+	font-weight: 300
+
+=or
+	font-family: 'Open Sans', sans-serif
+	font-weight: 400
+
+=osb
+	font-family: 'Open Sans', sans-serif
+	font-weight: 600
+
+=ob
+	font-family: 'Open Sans', sans-serif
+	font-weight: 700
+=oeb
+	font-family: 'Open Sans', sans-serif
+	font-weight: 800
+
+$n: transparent
+$text: #090a0b
+
+.title
+	&__main
+		font-size: 60px
+		margin-bottom: .3em
+		text-transform: uppercase
+		color: #fff
+		+ob
+	&__section
+		color: #fff
+		font-size: 30px
+		+ob
+	&__p
+		color: #090a0b
+		font-size: 24px
+		margin-bottom: .5em
+		+osb
+	&__m
+		color: #000
+		font-size: 24px
+		+ob
+	&__s
+		color: #1081bf
+		font-size: 50px
+		text-transform: uppercase
+		+b
+	&__l
+		font-size: 18px
+		color: #0c0d0e
+		+or
+
+.desc
+	&__r
+		font-size: 18px
+		color: #fff
+		+or
+	&__os
+		font-size: 16px
+		color: #fff
+		+osb
+
+.btn
+	&-blue
+		position: relative
+		display: inline-block
+		background-color: #1081bf
+		transform: perspective(1px) translateZ(0)
+		box-shadow: 0 0 1px rgba(0, 0, 0, 0)
+		position: relative
+		transition-property: color
+		transition-duration: 0.3s
+		color: #fff
+		&:before
+			content: ""
+			position: absolute
+			z-index: -1
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			background: #000
+			transform: scaleY(0)
+			transform-origin: 50% 0
+			transition-property: transform
+			transition-duration: 0.3s
+			transition-timing-function: ease-out
+		&:hover
+			&:before
+				transform: scaleY(1)
+
+	&-transparent
+		position: relative
+		padding: 4px
+		background-color: $n
+		&:active
+			background-color: #f2f2f2
+
+
+
+.icon-download
+	display: inline-block
+	vertical-align: top
+	background-image: url('../img/content/icon-cloud.png')
+	width: 62px
+	height: 41px
+
+.icon-cloud-blue
+	display: inline-block
+	vertical-align: top
+	background-image: url('../img/content/icon-cloud-blue.png')
+	width: 51px
+	height: 34px
+
+.icon-arrow
+	display: inline-block
+	vertical-align: top
+	width: 13px
+	height: 7px
+	background-image: url('../img/content/icon-down.png')
+.icon-checked
+	display: inline-block
+	vertical-align: top
+	width: 33px
+	height: 33px
+	background-image: url('../img/content/icon-checked.png')
+.icon-open
+	display: inline-block
+	vertical-align: top
+	width: 42px
+	height: 35px
+	background-image: url('../img/content/icon-open.png')
+.icon-drag
+	display: inline-block
+	vertical-align: top
+	width: 52px
+	height: 52px
+	background-image: url('../img/content/icon-drag.png')
+.icon-pensil
+	display: inline-block
+	vertical-align: top
+	width: 20px
+	height: 20px
+	background-image: url('../img/content/icon-pensil.png')
+.icon-basket
+	display: inline-block
+	vertical-align: top
+	width: 15px
+	height: 20px
+	background-image: url('../img/content/icon-basket.png')
+.icon-reverse
+	display: inline-block
+	vertical-align: middle
+	width: 15px
+	height: 15px
+	background-image: url('../img/content/icon-reverse.png')

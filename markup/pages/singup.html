@@ -1,0 +1,83 @@
+<!doctype html>
+<html class="no-js" lang="en-US">
+
+<head>
+	{{> head/head head.defaults}}
+</head>
+
+<body class="page">
+	%=symbols=%
+
+	<div class="page__wrapper">
+
+		{{> header/header}}
+		<div class="startscreen">
+			<div class="layout">
+				<h1 class="title__main" role="heading" aria-level="1">best aero curses</h1>
+				<div class="startscreen__text">
+					<p class="desc__r">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
+				</div>
+				{{> search/search}}
+				<a href="#" class="startscreen__download"><i class="icon-download"></i></a>
+			</div>
+		</div>
+		{{> popular/popular popular.pop}}
+
+		{{> prefooter/prefooter}}
+		{{> footer/footer}}
+
+		<div class="ppp">
+			<div class="ppp__bg"></div>
+			<div class="ppp__body" id="singUp">
+				<div class="ppp__header">
+					<a href="/" class="logo">
+						<img src="static/img/content/logo-big.png" alt="aero trainig logo">
+						<span class="logo__wrap">
+							<strong>aero</strong>
+							<b>training</b>
+						</span>
+					</a>
+				</div>
+				<div class="ppp__content">
+					<div class="ppp__centerbox">
+						<h3 class="title__section">Join Us</h3>
+						<p class="desc__r">Create an account and take acces to all collection</p>
+					</div>
+					<form action="/" method="post" class="create">
+						<div class="create__row">
+							<fieldset class="create__fieldset">
+								<label for="invite">Invite Code <span>*</span></label>
+								<input type="text" id="invite" class="create__name" name="invite" >
+							</fieldset>
+							<fieldset class="create__fieldset">
+								<label for="email">Email</label>
+								<input type="email" id="email" class="create__name" name="email" >
+							</fieldset>
+						</div>
+
+						<div class="create__row">
+							<fieldset class="create__fieldset">
+								<label for="username">Create Username</label>
+								<input type="text" id="username" class="create__name" name="username" >
+							</fieldset>
+							<fieldset class="create__fieldset">
+								<label for="pass">Create Password</label>
+								<input type="password" id="pass" class="create__name" name="pass" >
+							</fieldset>
+						</div>
+
+						<div class="ppp__btns">
+							<button class="btn btn-cancels">Cancel</button>
+							<button class="btn btn-continue">join us</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="static/js/separate-js/select.js"></script>
+
+</body>
+
+</html>

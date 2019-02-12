@@ -1,0 +1,29 @@
+
+<div class="popular">
+	<div class="layout">
+		<h2 class="title__section" role="heading" aria-level="2">{{title}}</h2>
+		<div class="popular__wrap">
+			{{#each item}}
+				<div class="popular__item">
+					<a href="#" class="popular__pic">
+						<img src={{src}} alt={{title}} class="popular__img">
+					</a>
+					<div class="popular__content">
+						<h3 class="title__p">{{title}}</h3>
+						<p class="desc__r">{{desc}}</p>
+					</div>
+					<div class="popular__footer">
+						<a href="#" class="popular__category">{{category}}</a>
+						<span class="popular__time">{{time}}</span>
+					</div>
+				</div>
+			{{/each}}
+		</div>
+		<ul class="dots">
+			<li class="dots__item"><a href="#"></a></li>
+			<li class="dots__item is-active"><a href="#"></a></li>
+			<li class="dots__item"><a href="#"></a></li>
+			<li class="dots__item"><a href="#"></a></li>
+		</ul>
+	</div>
+</div>

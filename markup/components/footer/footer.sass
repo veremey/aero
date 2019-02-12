@@ -1,0 +1,39 @@
+
+.footer
+	background-color: #0d0e0e
+	.layout
+		display: flex
+		align-items: center
+		justify-content: space-between
+		height: 120px
+		+r(650)
+			flex-direction: column
+			padding: 20px
+			height: auto
+	.logo
+		+r(650)
+			padding: 0
+			margin: 10px auto 10px
+		&:before
+			content: none
+		span
+			color: #fff
+
+.copy
+	color: #fff
+	font-size: 18px
+	+r(650)
+		margin: 14px 0
+		order: 2
+
+.footer__doc
+	+r(650)
+		margin: 20px 0 10px
+	a
+		display: inline-block
+		vertical-align: top
+		margin-left: 14px
+		color: #fff
+		+tr(.4s)
+		&:hover
+			color: #0f80be
